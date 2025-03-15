@@ -1,3 +1,3 @@
 <x-layout>
-    Index
+    Contact
 </x-layout>
