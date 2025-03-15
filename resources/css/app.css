@@ -13,3 +13,11 @@
 
     --color-ukraine-500: #0081cf;
 }
+
+/* Center container by default */
+@layer base {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
