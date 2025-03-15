@@ -22,27 +22,27 @@
                 <nav>
                     <ul class="flex gap-8">
                         <li>
-                            <a href="{{ route('index') }}" class="text-xl font-semibold hover:text-violet-600">
+                            <a href="{{ route('index') }}" class="text-xl font-semibold {{ request()->routeIs('index') ? 'text-violet-600' : '' }} hover:text-violet-600">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('courses') }}" class="text-xl font-semibold hover:text-violet-600">
+                            <a href="{{ route('courses') }}" class="text-xl font-semibold {{ request()->routeIs('courses') ? 'text-violet-600' : '' }} hover:text-violet-600">
                                 Courses
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('contact') }}" class="text-xl font-semibold hover:text-violet-600">
+                            <a href="{{ route('contact') }}" class="text-xl font-semibold {{ request()->routeIs('contact') ? 'text-violet-600' : '' }} hover:text-violet-600">
                                 Contact
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('login') }}" class="text-xl font-semibold hover:text-violet-600">
+                            <a href="{{ route('login') }}" class="text-xl font-semibold {{ request()->routeIs('login') ? 'text-violet-600' : '' }} hover:text-violet-600">
                                 Login
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('register') }}" class="text-xl font-semibold hover:text-violet-600">
+                            <a href="{{ route('register') }}" class="text-xl font-semibold {{ request()->routeIs('register') ? 'text-violet-600' : '' }} hover:text-violet-600">
                                 Register
                             </a>
                         </li>
