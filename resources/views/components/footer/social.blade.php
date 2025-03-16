@@ -1,14 +1,5 @@
-@php
-    $links = [
-        'youtube' => 'https://youtube.com',
-        'telegram' => 'https://telegram.org',
-        'github' => 'https://github.com',
-        'x' => 'https://x.com',
-    ];
-@endphp
-
 <ul class="flex gap-4">
-    @foreach ($links as $name => $link)
+    @foreach (config('watch.social_networks') as $name => $link)
     <li>
         <a href="{{ $link }}" target="_blank">
            <x-icon name="{{ $name }}" />
