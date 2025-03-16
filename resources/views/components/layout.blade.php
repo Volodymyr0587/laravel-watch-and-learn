@@ -16,6 +16,8 @@
         <main class="h-screen grid place-items-center text-7xl font-bold">
             {{ $slot }}
         </main>
+
+        <x-footer />
     </body>
 
 </html>
