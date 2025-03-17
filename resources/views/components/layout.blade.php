@@ -5,15 +5,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
         <title>{{ config('app.name') }}</title>
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
 
     <body class="flex flex-col h-screen">
         <x-header />
 
-        <main>
+        <main class="flex-grow">
             {{ $slot }}
         </main>
 
