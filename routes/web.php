@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    $courses = DB::select("SELECT * FROM courses");
+    $courses = DB::table("courses")->get();
 
     return view('index', compact('courses'));
 })->name('index');

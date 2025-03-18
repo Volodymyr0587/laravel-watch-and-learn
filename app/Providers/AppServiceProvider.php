@@ -23,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
     {
         //% Inspect SQL queries
         // DB::listen(function (QueryExecuted $query) {
-        //     dump([$query->sql, $query->bindings, $query->time]);
+        //     dump([$query->sql, $query->bindings, $query->time, $query->toRawSql()]);
         // });
     }
 }
