@@ -14,4 +14,9 @@ class Course extends Model
         'lessons_count',
         'length',
     ];
+
+    // public function gerRouteKeyName()
+    // {
+    //     return 'slug';
+    // }
 }

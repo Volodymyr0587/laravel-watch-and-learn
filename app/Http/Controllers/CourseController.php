@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Course;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\View\View;
 
 class CourseController extends Controller
@@ -16,10 +15,8 @@ class CourseController extends Controller
         return view('pages.courses.index', compact('courses'));
     }
 
-    public function show(int $id): View
+    public function show(Course $course): View
     {
-        $course = Course::find($id);
-
         return view('pages.courses.show', compact('course'));
     }
 }
