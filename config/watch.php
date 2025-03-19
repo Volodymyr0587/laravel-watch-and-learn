@@ -3,7 +3,7 @@
 return [
     'nav_items' => [
         'index' => ['route' => 'index', 'label' => 'Home'],
-        'courses' => ['route' => 'courses', 'label' => 'Courses'],
+        'courses.index' => ['route' => 'courses.index', 'label' => 'Courses'],
         'contact' => ['route' => 'contact', 'label' => 'Contact'],
         'terms' => ['route' => 'terms', 'label' => 'Terms'],
         'privacy' => ['route' => 'privacy', 'label' => 'Privacy'],

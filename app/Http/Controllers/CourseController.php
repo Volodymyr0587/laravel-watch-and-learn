@@ -12,13 +12,13 @@ class CourseController extends Controller
     {
         $courses = DB::table('courses')->get();
 
-        return view('courses', compact('courses'));
+        return view('pages.courses.index', compact('courses'));
     }
 
     public function show(int $id): View
     {
         $course = DB::table('courses')->find($id);
 
-        return view('course', compact('course'));
+        return view('pages.courses.show', compact('course'));
     }
 }
