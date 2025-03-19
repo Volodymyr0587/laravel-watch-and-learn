@@ -4,10 +4,32 @@ namespace Database\Seeders;
 
 use App\Models\Course;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Eloquent\Factories\Sequence;
 use Illuminate\Database\Seeder;
 
 class CourseSeeder extends Seeder
 {
+    private array $data = [
+        [
+            'title' => 'Vue Composition API From Scratch',
+            'description' => 'Project development on Vue Composition API',
+            'lessons_count' => 137,
+            'length' => '16h 20min',
+        ],
+        [
+            'title' => 'Builds with Vite',
+            'description' => 'Let\'s explore the power of modern frontend framework',
+            'lessons_count' => 33,
+            'length' => '3h 49min',
+        ],
+        [
+            'title' => 'IdeaVim | Vim in JetBrains',
+            'description' => 'Drastically Improve your productivity with IdeaVim',
+            'lessons_count' => 15,
+            'length' => '1h 20min',
+        ],
+    ];
+
     /**
      * Run the database seeds.
      */
@@ -15,6 +37,8 @@ class CourseSeeder extends Seeder
     {
         Course::truncate(); // delete all from courses table before seed data
 
-        Course::factory(10)->create();
+        Course::factory(50)
+            ->sequence(fn (Sequence $sequence) => $this->data[$sequence->index] ?? [])
+            ->create();
     }
 }
