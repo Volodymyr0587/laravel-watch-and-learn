@@ -21,3 +21,5 @@
         margin-right: auto;
     }
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
