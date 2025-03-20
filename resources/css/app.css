@@ -14,6 +14,8 @@
     --color-ukraine-500: #0081cf;
 }
 
+@plugin "@tailwindcss/forms";
+
 /* Center container by default */
 @layer base {
     .container {
