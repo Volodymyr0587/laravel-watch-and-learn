@@ -10,7 +10,7 @@ class CourseController extends Controller
 {
     public function index():View
     {
-        $courses = Course::latest()->paginate(4);
+        $courses = Course::latest()->paginate(10);
 
         return view('pages.courses.index', compact('courses'));
     }
