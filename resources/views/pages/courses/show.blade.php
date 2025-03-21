@@ -7,7 +7,7 @@
                 <x-course.info :$course/>
                 {{-- End Course Information --}}
                 {{-- Course lessons --}}
-                <x-course.lessons :$course/>
+                <x-course.lessons :lessons="$course->lessons" :$course />
                 {{-- End Course lessons --}}
             </div>
         </div>
