@@ -19,7 +19,6 @@ class CourseFactory extends Factory
         return [
             'title' => $this->faker->words(rand(2, 6), true),
             'description' => $this->faker->text(),
-            'lessons_count' => $this->faker->numberBetween(10, 50),
             'length' => "{$this->faker->numberBetween(1, 15)}h {$this->faker->numberBetween(1, 59)}min",
         ];
     }

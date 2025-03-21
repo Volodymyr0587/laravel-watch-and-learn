@@ -13,19 +13,16 @@ class CourseSeeder extends Seeder
         [
             'title' => 'Vue Composition API From Scratch',
             'description' => 'Project development on Vue Composition API',
-            'lessons_count' => 137,
             'length' => '16h 20m',
         ],
         [
             'title' => 'Builds with Vite',
             'description' => 'Let\'s explore the power of modern frontend framework',
-            'lessons_count' => 33,
             'length' => '3h 49m',
         ],
         [
             'title' => 'IdeaVim | Vim in JetBrains',
             'description' => 'Drastically Improve your productivity with IdeaVim',
-            'lessons_count' => 15,
             'length' => '1h 20m',
         ],
     ];

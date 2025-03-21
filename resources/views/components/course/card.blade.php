@@ -7,7 +7,10 @@
         <footer class="flex gap-2 justify-between mt-auto">
             <div class="flex items-center gap-2">
                 <x-icon name="film" class="size-4"/>
-                <span class="text-sm font-semibold">{{ $course->lessons_count }} {{ Str::plural('lesson', $course->lessons_count) }}</span>
+                @php
+                    $lessonsCount = $course->lessons()->count();
+                @endphp
+                <span class="text-sm font-semibold">{{ $lessonsCount }} {{ Str::plural('lesson', $lessonsCount) }}</span>
             </div>
             <div class="flex items-center gap-2">
                 <x-icon name="clock" class="size-4"/>
