@@ -16,6 +16,7 @@ class Lesson extends Model
         'course_id',
         'number',
         'title',
+        'length',
         'url',
         'commit_url',
     ];
