@@ -13,34 +13,50 @@ class LessonSeeder extends Seeder
         [
             'number' => 1,
             'title' => 'Intro & Setup',
+            'url' => 'https://www.youtube.com/embed/LWcTqX6BmOg',
+            'commit_url' => 'https://github.com/laravel/laravel/commit/e23c0c1bfddf6b01d2dd3b190de9a86b25bfe7c4',
         ],
         [
             'number' => 2,
             'title' => 'Auth Views, Routes & Controller',
+            'url' => 'https://www.youtube.com/embed/LWcTqX6BmOg',
+            'commit_url' => 'https://github.com/laravel/laravel/commit/e23c0c1bfddf6b01d2dd3b190de9a86b25bfe7c4',
         ],
         [
             'number' => 3,
             'title' => 'Register & Login Forms',
+            'url' => 'https://www.youtube.com/embed/LWcTqX6BmOg',
+            'commit_url' => 'https://github.com/laravel/laravel/commit/e23c0c1bfddf6b01d2dd3b190de9a86b25bfe7c4',
         ],
         [
             'number' => 4,
             'title' => 'Registering New User',
+            'url' => 'https://www.youtube.com/embed/LWcTqX6BmOg',
+            'commit_url' => 'https://github.com/laravel/laravel/commit/e23c0c1bfddf6b01d2dd3b190de9a86b25bfe7c4',
         ],
         [
             'number' => 5,
-            'title' => 'Logging Users Out'
+            'title' => 'Logging Users Out',
+            'url' => 'https://www.youtube.com/embed/LWcTqX6BmOg',
+            'commit_url' => 'https://github.com/laravel/laravel/commit/e23c0c1bfddf6b01d2dd3b190de9a86b25bfe7c4',
         ],
         [
             'number' => 6,
-            'title' => 'Logging Users In'
+            'title' => 'Logging Users In',
+            'url' => 'https://www.youtube.com/embed/LWcTqX6BmOg',
+            'commit_url' => 'https://github.com/laravel/laravel/commit/e23c0c1bfddf6b01d2dd3b190de9a86b25bfe7c4',
         ],
         [
             'number' => 7,
-            'title' => 'Accessing the Current User'
+            'title' => 'Accessing the Current User',
+            'url' => 'https://www.youtube.com/embed/LWcTqX6BmOg',
+            'commit_url' => 'https://github.com/laravel/laravel/commit/e23c0c1bfddf6b01d2dd3b190de9a86b25bfe7c4',
         ],
         [
             'number' => 8,
-            'title' => 'Protected Routes'
+            'title' => 'Protected Routes',
+            'url' => 'https://www.youtube.com/embed/LWcTqX6BmOg',
+            'commit_url' => 'https://github.com/laravel/laravel/commit/e23c0c1bfddf6b01d2dd3b190de9a86b25bfe7c4',
         ],
     ];
 

@@ -20,6 +20,7 @@ class CourseFactory extends Factory
             'title' => $this->faker->words(rand(2, 6), true),
             'description' => $this->faker->text(),
             'length' => "{$this->faker->numberBetween(1, 15)}h {$this->faker->numberBetween(1, 59)}min",
+            'repository_url' => $this->faker->url,
         ];
     }
 }

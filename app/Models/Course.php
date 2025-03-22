@@ -16,6 +16,7 @@ class Course extends Model
         'title',
         'description',
         'length',
+        'repository_url',
     ];
 
     // public function gerRouteKeyName()

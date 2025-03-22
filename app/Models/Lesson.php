@@ -15,6 +15,8 @@ class Lesson extends Model
         'course_id',
         'number',
         'title',
+        'url',
+        'commit_url',
     ];
 
     /**
