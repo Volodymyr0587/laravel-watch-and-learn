@@ -3,8 +3,9 @@
 namespace App\Models;
 
 use App\Traits\Routable;
-use Illuminate\Database\Eloquent\Casts\Attribute;
+use Carbon\CarbonInterval;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -48,6 +49,24 @@ class Lesson extends Model
                 ->course
                 ->lessons()
                 ->firstWhere('number', $this->number + 1),
+        );
+    }
+
+    protected function formattedLength(): Attribute
+    {
+        return Attribute::make(
+            get: function () {
+                $interval = CarbonInterval::seconds($this->length)
+                    ->cascade()
+                    ->toArray();
+
+                $formattedDays = $interval['days'] ? "{$interval['days']}d" : '';
+                $formattedHours = $interval['hours'] ? "{$interval['hours']}h" : '';
+                $formattedMinutes = $interval['minutes'] ? "{$interval['minutes']}m" : '';
+                $formattedSeconds = $interval['seconds'] ? "{$interval['seconds']}s" : '';
+
+                return trim("$formattedDays $formattedHours $formattedMinutes $formattedSeconds");
+            }
         );
     }
 }
