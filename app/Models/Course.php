@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Casts\Attribute;
+use App\Traits\Routable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Course extends Model
 {
-    use HasFactory;
+    use HasFactory, Routable;
 
     protected $table = 'courses';
 
@@ -46,12 +46,5 @@ class Course extends Model
     {
         // return $this->hasOne(Lesson::class)->ofMany('number', 'min');
         return $this->lessons()->one()->ofMany('number', 'min');
-    }
-
-    protected function routeUrl(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => route('courses.show', $this)
-        );
     }
 }
