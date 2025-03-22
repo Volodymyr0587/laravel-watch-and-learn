@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -32,5 +33,17 @@ class Course extends Model
     public function lessons(): HasMany
     {
         return $this->hasMany(Lesson::class);
+    }
+
+
+    /**
+     * Get the firstLesson associated with the Lesson
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function firstLesson(): HasOne
+    {
+        // return $this->hasOne(Lesson::class)->ofMany('number', 'min');
+        return $this->lessons()->one()->ofMany('number', 'min');
     }
 }
