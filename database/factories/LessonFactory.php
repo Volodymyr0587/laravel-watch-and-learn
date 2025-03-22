@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Course;
+use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -21,6 +22,7 @@ class LessonFactory extends Factory
             'course_id' => Course::inRandomOrder()->first(),
             'number' => 1,
             'title' => ucfirst(fake()->words(mt_rand(2, 6), true)),
+            'length' => fake()->numberBetween(Carbon::SECONDS_PER_MINUTE, 20 * Carbon::SECONDS_PER_MINUTE),
             'url' => 'https://www.youtube.com/embed/LWcTqX6BmOg',
             'commit_url' => 'https://github.com/laravel/laravel/commit/e23c0c1bfddf6b01d2dd3b190de9a86b25bfe7c4',
         ];

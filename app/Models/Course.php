@@ -17,7 +17,6 @@ class Course extends Model
     protected $fillable = [
         'title',
         'description',
-        'length',
         'repository_url',
     ];
 

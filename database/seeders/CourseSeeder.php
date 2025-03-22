@@ -13,19 +13,16 @@ class CourseSeeder extends Seeder
         [
             'title' => 'Laravel Authentication Tutorial',
             'description' => 'Development on Laravel',
-            'length' => '1h 6m',
             'repository_url' => 'https://github.com/laravel/laravel',
         ],
         [
             'title' => 'Builds with Vite',
             'description' => 'Let\'s explore the power of modern frontend framework',
-            'length' => '3h 49m',
             'repository_url' => 'https://github.com/vitejs/vite',
         ],
         [
             'title' => 'IdeaVim | Vim in JetBrains',
             'description' => 'Drastically Improve your productivity with IdeaVim',
-            'length' => '1h 20m',
             'repository_url' => 'https://github.com/JetBrains/ideavim',
         ],
     ];
