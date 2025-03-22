@@ -11,9 +11,9 @@ class CourseSeeder extends Seeder
 {
     private array $data = [
         [
-            'title' => 'Vue Composition API From Scratch',
-            'description' => 'Project development on Vue Composition API',
-            'length' => '16h 20m',
+            'title' => 'Laravel Authentication Tutorial',
+            'description' => 'Development on Laravel',
+            'length' => '1h 6m',
         ],
         [
             'title' => 'Builds with Vite',
